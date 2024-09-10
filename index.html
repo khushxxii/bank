@@ -5,66 +5,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bank Website</title>
         <link rel="stylesheet" href="style.css">
-        
     </head>
     <body>
-        <header>
-            <h1>Bank of the Future</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#" class="tablink" onclick="openTab(event, 'home')">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="tablink" onclick="openTab(event, 'services')">Services</a>
-                    </li>
-                    <li>
-                        <a href="#" class="tablink" onclick="openTab(event, 'about')">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="tablink" onclick="openTab(event, 'contact')">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <header id="header"></header>
 
-        <section id="home" class="tabcontent">
-            <h2>Welcome to the Bank of the Future</h2>
-            <p>Experience seamless banking solutions tailored to your needs.</p>
-        </section>
+        <section id="home" class="tabcontent"></section>
+        <section id="services" class="tabcontent" style="display:none;"></section>
+        <section id="about" class="tabcontent" style="display:none;"></section>
+        <section id="contact" class="tabcontent" style="display:none;"></section>
 
-        <section id="services" class="tabcontent" style="display:none;">
-            <h2>Our Services</h2>
-            <p>We offer a variety of services such as personal banking, loans, and credit cards.</p>
-        </section>
+        <footer id="footer"></footer>
 
-        <section id="about" class="tabcontent" style="display:none;">
-            <h2>About Us</h2>
-            <p>Bank of the Future has been providing quality financial services for over 50 years.</p>
-        </section>
-
-        <section id="contact" class="tabcontent" style="display:none;">
-            <h2>Contact Us</h2>
-            <form id="contactForm" action="mailto:khushisingh7205@yahoo.com" method="post" enctype="text/plain" onsubmit="showThankYouPopup(); return true;">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" required="required"><br><br>
-
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required="required"><br><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="5" required="required"></textarea><br><br>
-
-                <input type="submit" value="Send">
-            </form>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Bank of the Future. All rights reserved.</p>
-        </footer>
-
+        <script src="components/header.js"></script>
+        <script src="components/home.js"></script>
+        <script src="components/services.js"></script>
+        <script src="components/about.js"></script>
+        <script src="components/contact.js"></script>
+        <script src="components/footer.js"></script>
         <script src="script.js"></script>
         <script src="popup.js"></script>
-
     </body>
 </html>

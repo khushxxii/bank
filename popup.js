@@ -1,3 +1,3 @@
 function showThankYouPopup() {
-    alert("Thank you! Your message has been sent.");
+    alert("Thank you for your message and Khushi sucks.");
 }
